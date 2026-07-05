@@ -655,7 +655,7 @@ export default function WorkerOnboarding({ userId, onComplete, lang: langProp })
                     borderRadius:10, fontSize:13, fontFamily:"'Poppins',sans-serif",
                     outline:'none', textAlign:'center' }} />
                 <span style={{ fontSize:12, color:'#6b7280', whiteSpace:'nowrap' }}>
-                  {lang==='fr'?'€':'$'}{tx.rate_unit}
+                  {cityMeta?.country === 'FR' ? '€' : '$'}{tx.rate_unit}
                 </span>
               </div>
             </div>
